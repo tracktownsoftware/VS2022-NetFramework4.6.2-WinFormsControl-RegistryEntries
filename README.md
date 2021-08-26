@@ -18,11 +18,22 @@ Follow the steps below to see the NetFramework4.6.2_Example in VS2019 and VS2022
 3. From the solution folder run DN462_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
     - C:\temp\DN462_WinFormsControl\bin\DN462_WinFormsControl.dll
     - C:\temp\DN462_WinFormsControl\bin\design\DN462_WinFormsControl.Design.dll
-4. Run DN462_RegistryEntriesForVS2019.reg to add 32-bit **WOW6432Node** registry entries that:
-    - Automatically load MyButton control into the VS2019 Toolbox for Windows Forms projects
-    - Inform VS2019 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
-6. In VS2019 make a new .Net Framework Windows Forms project:
-    - Open the Form1 design surface.
-    - **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4).
-    - Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
-    - Rt-click MyButton control on Form1 design surface to use functional design-time context menu items (image below)
+4. The VS2019 Test: SUCCESS
+    - Run DN462_RegistryEntriesForVS2019.reg to add 32-bit **WOW6432Node** registry entries that:
+      - Automatically load MyButton control into the VS2019 Toolbox for Windows Forms projects
+      - Inform VS2019 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
+    - In VS2019 make a new .Net Framework Windows Forms project:
+      1. Open the Form1 design surface.
+      2. **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4).
+      3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
+      4. Rt-click MyButton control on Form1 design surface to use functional design-time context menu items (image below)
+5. The VS2022 Preview Test: FAIL (toolbox not automatically populated with MyButton control)
+    - Run DN462_RegistryEntriesForVS2022.reg to add 64-bit registry entries that:
+      - Automatically load MyButton control into the VS2022 Toolbox for Windows Forms projects
+      - Inform VS2022 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
+    - In VS2022 make a new .Net Framework Windows Forms project:
+      1. Open the Form1 design surface.
+      2. FAIL: Open the VS2022 Toolbox. Observe that the MyButton control is **NOT** in the VS toolbox.
+      3. WORKAROUND: In the VS2022 toolbox Rt-click and "choose items..." to select C:\temp\DN462_WinFormsControl\bin\DN462_WinFormsControl.dll
+      4. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
+      5. Rt-click MyButton control on Form1 design surface to use functional design-time context menu items    
