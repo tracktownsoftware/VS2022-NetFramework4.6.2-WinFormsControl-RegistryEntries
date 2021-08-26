@@ -21,8 +21,8 @@ Follow the steps below to see the NetFramework4.6.2_Example
 4. Run DN462_RegistryEntriesForVS2019.reg to add 32-bit **WOW6432Node** registry entries that:
     - Automatically load MyButton control into the VS2019 Toolbox for Windows Forms projects
     - Inform VS2019 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
-6. In VS2019 make a new .Net Framework Windows Forms project. 
-- 1. Open the Form1 design surface.
-- 2. Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4).
-- 3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
-- 4. Rt-click MyButton control on Form1 design surface to use functional design-time context menu items (image below)
+6. In VS2019 make a new .Net Framework Windows Forms project:
+    - Open the Form1 design surface.
+    - **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4).
+    - Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
+    - Rt-click MyButton control on Form1 design surface to use functional design-time context menu items (image below)
