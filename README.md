@@ -1,5 +1,5 @@
 # VS2022-NetFramework4.6.2-WinFormsControl-RegistryEntries
-A possible bug in VS2022 is it does not apply the "Toolbox Controls Installer" registry entry to automatically populate the VS2022 toolbox with a .NET Framework 4.6.2 Windows Forms custom control. This works in VS2019 (and VS2017).
+A possible bug in VS2022 is it does not apply the "Toolbox Controls Installer" registry entry to automatically populate the VS2022 toolbox with a .NET Framework 4.6.2 Windows Forms custom control. This works in VS2019.
 
 Microsoft documentation (see the sections about AssemblyFoldersEx registration):  [The Toolbox Controls Installer](https://www.microsoft.com/en-us/download/details.aspx?id=35536)
 
@@ -12,7 +12,7 @@ There are two folders in this repo.
 2. NetFramework3.5_Example - A .Net Framework 3.5 Windows Forms custom control example that shows Microsoft's "Toolbox Controls Installer" registry entry working in **both** VS2019 and VS2022!
   
 ### Folder NetFramework4.6.2_Example contains a .Net Framework 4.6.2 example of a Windows Forms custom control. Registry entries should populate the VS toolbox (using Visual Toolbox Installer) and inform Visual Studio the location of an external .design.dll file used for designer extensibility.
-Follow the steps below to see the NetFramework4.6.2_Example
+Follow the steps below to see the NetFramework4.6.2_Example in VS2019 and VS2022
 1. Open the DN462_WinFormsControl.sln in Visual Studio 2019 (you can probably do this in VS2022 preview but I have not tested).
 2. Build release configuration
 3. From the solution folder run DN462_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
