@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace DN35_WinFormsControl
 {
-    //[Designer("DN462_WinFormsControl.Design.MyButtonDesigner, DN462_WinFormsControl.Design")]
+    [Designer("DN35_WinFormsControl.Design.MyButtonDesigner, DN35_WinFormsControl.Design")]
     public class MyButton : System.Windows.Forms.Button
     {
         public MyButton()

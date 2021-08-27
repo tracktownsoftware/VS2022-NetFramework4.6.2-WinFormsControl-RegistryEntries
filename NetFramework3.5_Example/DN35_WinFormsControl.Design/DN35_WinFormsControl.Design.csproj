@@ -49,6 +49,7 @@
     <ProjectReference Include="..\DN35_WinFormsControl\DN35_WinFormsControl.csproj">
       <Project>{7e94a588-e1cb-4d6d-9b90-39d0f24eae9a}</Project>
       <Name>DN35_WinFormsControl</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
