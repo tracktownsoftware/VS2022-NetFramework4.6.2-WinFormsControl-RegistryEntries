@@ -60,4 +60,5 @@ Follow the steps below to see the NetFramework3.5_Example in VS2019 and VS2022. 
     - In VS2022 make a new .Net Framework 3.5 Windows Forms project:
       1. Open the Form1 design surface.
       2. **SUCCESS**: Open the VS2022 Toolbox. Observe that the MyButton control **IS** in the VS 2022 toolbox.
+      ![Image](NetFramework35_Example/VS2022_DN35_MyButtonDesignTime.png)
 
