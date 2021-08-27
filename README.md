@@ -32,7 +32,7 @@ Follow the steps below to see the NetFramework4.6.2_Example in VS2019 and VS2022
     - Run DN462_RegistryEntriesForVS2022.reg to add 64-bit registry entries that:
       - Automatically loads MyButton control into the VS2022 Toolbox for Windows Forms projects
       - Inform VS2022 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
-    - In VS2022 make a new .Net Framework Windows Forms project:
+    - In VS2022 make a new .Net Framework 4.6.2 Windows Forms project:
       1. Open the Form1 design surface.
       2. FAIL: Open the VS2022 Toolbox. Observe that the MyButton control is **NOT** in the VS toolbox.
       3. WORKAROUND: In the VS2022 toolbox Rt-click and "choose items..." to select C:\temp\DN462_WinFormsControl\bin\DN462_WinFormsControl.dll
@@ -50,7 +50,7 @@ Follow the steps below to see the NetFramework3.5_Example in VS2019 and VS2022. 
     - Run DN35_RegistryEntriesForVS2019.reg to add 32-bit **WOW6432Node** registry entries that:
       - Automatically loads MyButton control into the VS2019 Toolbox for Windows Forms projects
       - Inform VS2019 that DN35_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
-    - In VS2019 make a new .Net Framework Windows Forms project:
+    - In VS2019 make a new .Net Framework 3.5 Windows Forms project:
       1. Open the Form1 design surface.
       2. **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4)
 5. **The VS2022 Preview Test: SUCCESS**
