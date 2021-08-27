@@ -13,7 +13,7 @@ There are two folders in this repo.
   
 ### Folder NetFramework4.6.2_Example contains a .Net Framework 4.6.2 example of a Windows Forms custom control. Registry entries should populate the VS toolbox (using Visual Toolbox Installer) and inform Visual Studio the location of an external .design.dll file used for designer extensibility.
 Follow the steps below to see the NetFramework4.6.2_Example in VS2019 and VS2022
-1. Open the DN462_WinFormsControl.sln in Visual Studio 2019 (you can probably do this in VS2022 preview but I have not tested).
+1. Open the DN462_WinFormsControl.sln in Visual Studio 2019 or VS2022 Preview.
 2. Build release configuration
 3. From the solution folder run DN462_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
     - C:\temp\DN462_WinFormsControl\bin\DN462_WinFormsControl.dll
@@ -41,7 +41,7 @@ Follow the steps below to see the NetFramework4.6.2_Example in VS2019 and VS2022
 
 ### Folder NetFramework3.5_Example contains a .Net Framework 3.5 example of a Windows Forms custom control. Registry entries should populate the VS toolbox (using Visual Toolbox Installer) and inform Visual Studio the location of an external .design.dll file used for designer extensibility.
 Follow the steps below to see the NetFramework3.5_Example in VS2019 and VS2022. You may have to install .Net Framework 3.5.
-1. Open the DN35_WinFormsControl.sln in Visual Studio 2019 (you can probably do this in VS2022 preview but I have not tested).
+1. Open the DN35_WinFormsControl.sln in Visual Studio 2019 or VS2022 Preview.
 2. Build release configuration
 3. From the solution folder run DN35_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
     - C:\temp\DN35_WinFormsControl\bin\DN35_WinFormsControl.dll
