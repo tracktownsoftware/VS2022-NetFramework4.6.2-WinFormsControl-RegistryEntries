@@ -2,6 +2,7 @@
 
 ## VS2022 Preview 4 testing
 Some progress: VS2022 Preview 4 now loads controls into the VS toolbox from Toolbox Controls Installer registry entries in the 32-bit (WOW6432NODE) registry hive.
+
 What's not working: The registry entry to inform VS2022 about designer extensibility in an external .design.dll doesn't work for my control from the 32-bit registry hive (this was working when VS2022 was able to read from the 64-bit registry hive)
 
 ## VS2022 Preview 3.1 testing
