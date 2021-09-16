@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319\AssemblyFoldersEx\DN462_WinFormsControl]
+@="C:\\Temp\\DN462_WinFormsControl\\bin"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319\AssemblyFoldersEx\DN462_WinFormsControl\Toolbox]
+"Update"="7/30/2021 13:32:34"
+"Tabname"="DN462_WinFormsControl v4.0.30319"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319\AssemblyFoldersEx\DN462_WinFormsControl Designer]
+@="C:\\Temp\\DN462_WinFormsControl\\bin\\Design"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.6.2\AssemblyFoldersEx\DN462_WinFormsControl]
+@="C:\\Temp\\DN462_WinFormsControl\\bin"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.6.2\AssemblyFoldersEx\DN462_WinFormsControl\Toolbox]
+"Update"="7/30/2021 13:32:34"
+"Tabname"="DN462_WinFormsControl v4.6.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.6.2\AssemblyFoldersEx\DN462_WinFormsControl Designer]
+@="C:\\Temp\\DN462_WinFormsControl\\bin\\Design"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.7.2\AssemblyFoldersEx\DN462_WinFormsControl]
+@="C:\\Temp\\DN462_WinFormsControl\\bin"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.7.2\AssemblyFoldersEx\DN462_WinFormsControl\Toolbox]
+"Update"="7/30/2021 13:32:34"
+"Tabname"="DN462_WinFormsControl v4.7.2"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.7.2\AssemblyFoldersEx\DN462_WinFormsControl Designer]
+@="C:\\Temp\\DN462_WinFormsControl\\bin\\Design"
