@@ -5,7 +5,7 @@ Some progress: VS2022 Preview 4 now loads controls into the VS toolbox from Tool
 
 What's not working: The registry entry to inform VS2022 about designer extensibility in an external .design.dll doesn't work for my control from the 32-bit registry hive (this was working when VS2022 was able to read from the 64-bit registry hive)
 
-To observe the VS2022 designer extensibility bug follow the steps below in VS2019 (SUCCESS: behaves correctly) and VS2022 (FAIL)
+**To observe the VS2022 designer extensibility bug follow the steps below in VS2019 (SUCCESS: behaves correctly) and VS2022 (FAIL)**
 1. Open the DN462_WinFormsControl.sln in Visual Studio 2019 or VS2022 Preview.
 2. Build release configuration
 3. From the solution folder run DN462_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
@@ -17,15 +17,15 @@ To observe the VS2022 designer extensibility bug follow the steps below in VS201
 6. **The VS2019 Test: SUCCESS**
     - In VS2019 make a new .Net Framework 4.6.2 Windows Forms project:
       1. Open the Form1 design surface.
-      2. **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4)
+      2. Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4)
       3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
-      4. Rt-click MyButton control on Form1 design surface to use functional design-time context menu items
+      4. **SUCCESS**: Rt-click MyButton control on Form1 design surface to use functional design-time context menu items
 5. **The VS2022 Preview 4 Test: FAIL (MyButton control designer extensibility not working)**
     - In VS2022 make a new .Net Framework 4.6.2 Windows Forms project:
       1. Open the Form1 design surface.
-      2. SUCCESS: Open the VS2022 Toolbox. Observe that the MyButton control is **NOT** in the VS toolbox.
+      2. Open the VS2022 Toolbox. Observe that the MyButton control is **NOT** in the VS toolbox.
       3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
-      4. FAIL: control shows in the Form1 tray area. This appears to be a designer extensibility issue.
+      4. **FAIL**: control shows in the Form1 tray area. This appears to be a designer extensibility issue.
 
 ## VS2022 Preview 3.1 testing
 A possible bug in VS2022 Preview 3.1 is it doesn't apply the "Toolbox Controls Installer" registry entry to automatically populate the VS2022 toolbox with a .NET Framework 4.6.2 Windows Forms custom control. This works in VS2019.
