@@ -5,7 +5,7 @@ Some progress: VS2022 Preview 4 now loads controls into the VS toolbox from Tool
 
 What's not working: The registry entry to inform VS2022 about designer extensibility in an external .design.dll doesn't work for my control from the 32-bit registry hive (this was working when VS2022 was able to read from the 64-bit registry hive)
 
-**To observe the VS2022 designer extensibility bug follow the steps below in VS2019 (SUCCESS: behaves correctly) and VS2022 (FAIL)**
+**To observe the VS2022 Preview 4 designer extensibility bug follow the steps below in VS2019 (SUCCESS: behaves correctly) and VS2022 (FAIL)**
 1. Open the DN462_WinFormsControl.sln in Visual Studio 2019 or VS2022 Preview.
 2. Build release configuration
 3. From the solution folder run DN462_CopyBinToTempFolder.bat (or copy files by hand) to copy bin output to the paths below:
