@@ -23,7 +23,7 @@ To observe the VS2022 designer extensibility bug follow the steps below in VS201
       2. **SUCCESS**: Open the VS2019 Toolbox. Observe that the MyButton control is in the VS toolbox (thanks to the toolbox registry entry in step 4)
       3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
       4. Rt-click MyButton control on Form1 design surface to use functional design-time context menu items
-5. **The VS2022 Preview Test: FAIL (toolbox not automatically populated with MyButton control)**
+5. **The VS2022 Preview 4 Test: FAIL (MyButton control designer extensibility not working)**
     - Run DN462_RegistryEntriesForVS2022.reg to add 64-bit registry entries that:
       - Automatically loads MyButton control into the VS2022 Toolbox for Windows Forms projects
       - Inform VS2022 that DN462_WinFormsControl.Design.dll is in the Design subfolder (supports designer extensibility)
