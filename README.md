@@ -24,7 +24,7 @@ What's not working: The registry entry to inform VS2022 about designer extensibi
 5. **The VS2022 Preview 4 Test: FAIL (MyButton control designer extensibility not working)**
     - In VS2022 make a new .Net Framework **4.7.2** Windows Forms project:
       1. Open the Form1 design surface.
-      2. Open the VS2022 Toolbox. Observe that the MyButton control is **NOT** in the VS toolbox.
+      2. Open the VS2022 Toolbox. Observe that the MyButton control **IS** in the VS toolbox.
       3. Click MyButton in the toolbox and then click+drag on Form1 design surface to draw MyButton control
       4. **FAIL**: control shows in the Form1 tray area. This appears to be a designer extensibility issue.
       ![Image](NetFramework4.6.2_Example/FAIL_VS2022Preview4_DesignerExtensibility.png)
